@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-import { TitleBar } from '../lib/index';
+import { TitleBar } from '$lib/index';
 import { render, RenderResult } from '@testing-library/svelte';
 import match from "@el3um4s/match";
 
