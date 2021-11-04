@@ -1,6 +1,6 @@
 import { Browser, chromium } from 'playwright';
 
-describe('jest-image-snapshot: test is working', () => {
+describe('test themes', () => {
     let browser: Browser;
 
     beforeAll(async () => {
@@ -11,10 +11,33 @@ describe('jest-image-snapshot: test is working', () => {
       await browser.close();
     });
 
-    test("base", async () => {
+    test("theme default", async () => {
         const page = await browser.newPage();
         await page.goto('http://localhost:3000/test/titlebars');
         const image = await page.screenshot();
         expect(image).toMatchImageSnapshot();
     })
+
+    test("theme light", async () => {
+        const page = await browser.newPage();
+        await page.goto('http://localhost:3000/test/titlebars-light');
+        const image = await page.screenshot();
+        expect(image).toMatchImageSnapshot();
+    })
+
+    test("theme dark", async () => {
+        const page = await browser.newPage();
+        await page.goto('http://localhost:3000/test/titlebars-dark');
+        const image = await page.screenshot();
+        expect(image).toMatchImageSnapshot();
+    })
+
+    test("theme dark and light", async () => {
+        const page = await browser.newPage();
+        await page.goto('http://localhost:3000/test/titlebars-dark-light');
+        const image = await page.screenshot();
+        expect(image).toMatchImageSnapshot();
+    })
 })
+
+test.todo("test custom colors");

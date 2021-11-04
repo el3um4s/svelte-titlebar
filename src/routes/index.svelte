@@ -2,6 +2,7 @@
 	import { TitleBar } from '$lib/index';
 	let title = 'Title';
 	let isMaximized = false;
+	let theme = 'theme-light';
 
 	let logs = '';
 	const log = (l: string) => {
@@ -15,13 +16,21 @@
 	function unmaximize() {
 		log('unmaximize');
 		isMaximized = false;
+		toggleTheme();
 	}
 
 	function maximize() {
 		log('maximize');
 		isMaximized = true;
+		toggleTheme();
+	}
+
+	function toggleTheme() {
+		theme = theme === 'theme-light' ? 'theme-dark' : 'theme-light';
 	}
 </script>
+
+<TitleBar />
 
 <TitleBar
 	{title}
@@ -30,6 +39,7 @@
 	on:clickUnmaximize={unmaximize}
 	on:clickMaximize={maximize}
 	on:clickClose={() => log('close')}
+	class={theme}
 />
 
 <div>Click: {logs}</div>

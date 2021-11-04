@@ -59,25 +59,27 @@ test('TitleBar has IconUnmaximize when isMaximized = true', () => {
     expect(iconMaximize.getElementsByTagName("svg")[0].getAttribute("data-testid")).toBe("SVGIconUnmaximize");
 })
 
-test('TitleBar change icons when is maximized and unmaximized', () => {
-    const titleBar = render(TitleBar, {isMaximized: true});
+test('TitleBar change icons when is maximized and unmaximized', async () => {
+    const titleBar = render(TitleBar, {isMaximized: false});
     const buttons = titleBar.container.getElementsByClassName("button");
-
+    
     const iconMaximize = buttons[1];
     expect(iconMaximize).toBeInTheDocument();
     expect(iconMaximize).toBeVisible();
-    expect(iconMaximize.getAttribute("data-testid")).toBe("IconUnmaximize");
-    expect(iconMaximize.getElementsByTagName("svg")[0].getAttribute("data-testid")).toBe("SVGIconUnmaximize");
+    expect(iconMaximize.getAttribute("data-testid")).toBe("IconMaximize");
+    expect(iconMaximize.getElementsByTagName("svg")[0].getAttribute("data-testid")).toBe("SVGIconMaximize");
 
-    titleBar.component.$set({isMaximized:true});
-    expect(iconMaximize).toBeInTheDocument();
-    expect(iconMaximize).toBeVisible();
-    expect(iconMaximize.getAttribute("data-testid")).toBe("IconUnmaximize");
-    expect(iconMaximize.getElementsByTagName("svg")[0].getAttribute("data-testid")).toBe("SVGIconUnmaximize");
-
-    titleBar.component.$set({isMaximized:false});
-    expect(iconMaximize).toBeInTheDocument();
-    expect(iconMaximize).toBeVisible();
-    expect(iconMaximize.getAttribute("data-testid")).toBe("IconUnmaximize");
-    expect(iconMaximize.getElementsByTagName("svg")[0].getAttribute("data-testid")).toBe("SVGIconUnmaximize");
+    await titleBar.component.$set({isMaximized:true});
+    const iconUnmaximize = buttons[1];
+    expect(iconUnmaximize).toBeInTheDocument();
+    expect(iconUnmaximize).toBeVisible();
+    expect(iconUnmaximize.getAttribute("data-testid")).toBe("IconUnmaximize");
+    expect(iconUnmaximize.getElementsByTagName("svg")[0].getAttribute("data-testid")).toBe("SVGIconUnmaximize");
+    
+    await titleBar.component.$set({isMaximized:false});
+    const iconMaximizeAgain = buttons[1];
+    expect(iconMaximizeAgain).toBeInTheDocument();
+    expect(iconMaximizeAgain).toBeVisible();
+    expect(iconMaximizeAgain.getAttribute("data-testid")).toBe("IconMaximize");
+    expect(iconMaximizeAgain.getElementsByTagName("svg")[0].getAttribute("data-testid")).toBe("SVGIconMaximize");
 })

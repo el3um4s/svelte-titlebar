@@ -4,21 +4,17 @@
 @tailwind utilities;
 
 :root {
-	--text-color: #374151; // gray-700
-	--background-color: #f3f4f6; // gray-100
+	--background-color: theme('colors.gray.800');
+	--text-color: theme('colors.gray.200');
 }
 
-/* @layer components {
+@layer components {
 	.theme-light {
-		--color-primary: #0060df;
-		--color-secondary: #fbfbfe;
-		--color-accent: #fd6f53;
-		--font-color: #000000;
+		--background-color: theme('colors.gray.200');
+		--text-color: theme('colors.gray.800');
 	}
 	.theme-dark {
-		--color-primary: #17ed90;
-		--color-secondary: #243133;
-		--color-accent: #12cdea;
-		--font-color: #ffffff;
+		--background-color: theme('colors.gray.800');
+		--text-color: theme('colors.gray.200');
 	}
-} */
+}
