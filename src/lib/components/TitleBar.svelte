@@ -12,7 +12,7 @@
 
 <header>
 	<div class="drag-region" data-testid="drag-region">
-		<div class="title">
+		<div class="title" data-testid="title">
 			<span>{title}</span>
 		</div>
 		<div class="window-controls">
