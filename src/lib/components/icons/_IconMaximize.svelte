@@ -14,6 +14,7 @@
 	stroke="currentColor"
 	{height}
 	{width}
+	data-testid="SVGIconMaximize"
 >
 	<path
 		stroke-linecap="round"

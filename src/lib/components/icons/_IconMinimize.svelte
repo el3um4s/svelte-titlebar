@@ -13,6 +13,7 @@
 	fill="currentColor"
 	{height}
 	{width}
+	data-testid="SVGIconMinimize"
 >
 	<path
 		fill-rule="evenodd"

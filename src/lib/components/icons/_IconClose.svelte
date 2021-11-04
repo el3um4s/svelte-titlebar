@@ -14,6 +14,7 @@
 	fill="currentColor"
 	{height}
 	{width}
+	data-testid="SVGIconClose"
 >
 	<path
 		fill-rule="evenodd"

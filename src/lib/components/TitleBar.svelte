@@ -5,6 +5,7 @@
 	import IconUnmaximize from './icons/_IconUnmaximize.svelte';
 
 	export let title = 'Title';
+	export let isMaximized = false;
 
 	$: title = title || '';
 </script>
@@ -18,12 +19,15 @@
 			<div class="button" data-testid="IconMinimize">
 				<IconMinimize />
 			</div>
-			<div class="button" data-testid="IconMaximize">
-				<IconMaximize />
-			</div>
-			<!-- <div class="button" data-testid="IconMaximize">
-				<IconUnmaximize />
-			</div> -->
+			{#if isMaximized}
+				<div class="button" data-testid="IconUnmaximize">
+					<IconUnmaximize />
+				</div>
+			{:else}
+				<div class="button" data-testid="IconMaximize">
+					<IconMaximize />
+				</div>
+			{/if}
 			<div class="button" data-testid="IconClose">
 				<IconClose />
 			</div>
