@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { createEventDispatcher } from 'svelte';
+
 	import IconClose from './icons/_IconClose.svelte';
 	import IconMinimize from './icons/_IconMinimize.svelte';
 	import IconMaximize from './icons/_IconMaximize.svelte';
@@ -8,6 +10,8 @@
 	export let isMaximized = false;
 
 	$: title = title || '';
+
+	const dispatch = createEventDispatcher();
 </script>
 
 <header>
@@ -16,19 +20,27 @@
 			<span>{title}</span>
 		</div>
 		<div class="window-controls">
-			<div class="button" data-testid="IconMinimize">
+			<div class="button" data-testid="IconMinimize" on:click={(e) => dispatch('clickMinimize', e)}>
 				<IconMinimize />
 			</div>
 			{#if isMaximized}
-				<div class="button" data-testid="IconUnmaximize">
+				<div
+					class="button"
+					data-testid="IconUnmaximize"
+					on:click={(e) => dispatch('clickUnmaximize', e)}
+				>
 					<IconUnmaximize />
 				</div>
 			{:else}
-				<div class="button" data-testid="IconMaximize">
+				<div
+					class="button"
+					data-testid="IconMaximize"
+					on:click={(e) => dispatch('clickMaximize', e)}
+				>
 					<IconMaximize />
 				</div>
 			{/if}
-			<div class="button" data-testid="IconClose">
+			<div class="button" data-testid="IconClose" on:click={(e) => dispatch('clickClose', e)}>
 				<IconClose />
 			</div>
 		</div>
