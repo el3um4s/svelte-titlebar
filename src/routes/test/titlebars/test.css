@@ -1,0 +1,73 @@
+.container {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.container > div {
+	border: 1px solid red;
+	position: relative;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		'full-width full-width full-width full-width full-width'
+		'left center center center right'
+		'left center-left mini-center center-right right'
+		'left mini-left bottom-right bottom-right right'
+		'left bottom-left bottom-left mini-bottom right'
+		'left bottom bottom bottom right';
+}
+
+.full-width {
+	grid-area: full-width;
+}
+
+.left {
+	grid-area: left;
+}
+
+.right {
+	grid-area: right;
+}
+
+.center {
+	grid-area: center;
+}
+
+.center-left {
+	grid-area: center-left;
+}
+
+.center-right {
+	grid-area: center-right;
+}
+
+.bottom {
+	grid-area: bottom;
+}
+
+.bottom-left {
+	grid-area: bottom-left;
+}
+
+.bottom-right {
+	grid-area: bottom-right;
+}
+
+.mini-bottom {
+	grid-area: mini-bottom;
+}
+
+.mini-left {
+	grid-area: mini-left;
+}
+
+.mini-center {
+	grid-area: mini-center;
+}

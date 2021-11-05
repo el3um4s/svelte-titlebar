@@ -13,31 +13,36 @@ describe('test themes', () => {
 
     test("theme default", async () => {
         const page = await browser.newPage();
-        await page.goto('http://localhost:3000/test/titlebars');
+        await page.goto('http://localhost:3000/test/titlebars/default');
         const image = await page.screenshot();
         expect(image).toMatchImageSnapshot();
     })
 
     test("theme light", async () => {
         const page = await browser.newPage();
-        await page.goto('http://localhost:3000/test/titlebars-light');
+        await page.goto('http://localhost:3000/test/titlebars/light');
         const image = await page.screenshot();
         expect(image).toMatchImageSnapshot();
     })
 
     test("theme dark", async () => {
         const page = await browser.newPage();
-        await page.goto('http://localhost:3000/test/titlebars-dark');
+        await page.goto('http://localhost:3000/test/titlebars/dark');
         const image = await page.screenshot();
         expect(image).toMatchImageSnapshot();
     })
 
     test("theme dark and light", async () => {
         const page = await browser.newPage();
-        await page.goto('http://localhost:3000/test/titlebars-dark-light');
+        await page.goto('http://localhost:3000/test/titlebars/dark-light');
+        const image = await page.screenshot();
+        expect(image).toMatchImageSnapshot();
+    })
+
+    test("colors", async () => {
+        const page = await browser.newPage();
+        await page.goto('http://localhost:3000/test/titlebars/colors');
         const image = await page.screenshot();
         expect(image).toMatchImageSnapshot();
     })
 })
-
-test.todo("test custom colors");
