@@ -1,12 +1,10 @@
 <script>
-	import { base } from '$app/paths';
-
 	import '../../../app.css';
 	import './test.css';
 </script>
 
 <div>
-	<a href={base}>Back</a>
+	<a href="https://el3um4s.github.io/svelte-titlebar">Back</a>
 
 	<slot />
 </div>
