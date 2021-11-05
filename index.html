@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+
+		
+
+		<link rel="modulepreload" href="/_app/start-557f1e32.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-8635aac4.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-4f27376f.js">
+		<link rel="modulepreload" href="/_app/pages/index.svelte-dc0d6a49.js">
+		<link rel="modulepreload" href="/_app/chunks/TitleBar-c81b09d6.js">
+		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
+		<link rel="stylesheet" href="/_app/assets/vendor-2f7b4fa7.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-f2562f53.css">
+		<link rel="stylesheet" href="/_app/assets/app-6de3d55a.css">
+		<link rel="stylesheet" href="/_app/assets/pages/index.svelte-31a95352.css">
+		<link rel="stylesheet" href="/_app/assets/TitleBar-25190c78.css">
+
+		<script type="module">
+			import { start } from "/_app/start-557f1e32.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-4f27376f.js"),
+						import("/_app/pages/index.svelte-dc0d6a49.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<main class="svelte-1dqh84r"><section class="svelte-1fl1pqq"><h1 class="svelte-1fl1pqq">Svelte-Titlebar</h1>
+	<div><i>A Titlebar component for Svelte Projects</i></div>
+
+	<div class="toggle">
+  <label for="toggle0.qohuqypc5o" class=" svelte-5nxwfo"></label>
+  <div class="svelte-5nxwfo"><button id="toggle0.qohuqypc5o" aria-checked type="button" role="switch" style="color: #eee; background-color: #10B981; undefined" class=" svelte-5nxwfo"></button>
+    
+      <span class="svelte-5nxwfo">EN</span>
+    </div></div>
+
+	<div class="titlebar svelte-1fl1pqq"><div style="display: contents; --background-color:#1e609f; --text-color:#DBDBDB;"><header class="theme-light svelte-164k2gg"><div class="drag-region svelte-164k2gg" data-testid="drag-region"><div class="title svelte-164k2gg" data-testid="title"><span class="svelte-164k2gg">Title</span></div>
+		<div class="window-controls svelte-164k2gg"><div class="button svelte-164k2gg" data-testid="IconMinimize">
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="" viewBox="0 0 20 20" fill="currentColor" height="24" width="24" data-testid="SVGIconMinimize"><path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg></div>
+			<div class="button svelte-164k2gg" data-testid="IconMaximize">
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="24" width="24" data-testid="SVGIconMaximize"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg></div>
+			<div class="button svelte-164k2gg" data-testid="IconClose">
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="" viewBox="0 0 20 20" fill="currentColor" height="24" width="24" data-testid="SVGIconClose"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></div></div></div>
+</header></div>
+		<div class="log svelte-1fl1pqq">Click: </div></div>
+
+	<div class="details svelte-1fl1pqq"><div class="title svelte-1fl1pqq">Props</div>
+		<label><span class="label svelte-1fl1pqq">title</span>
+			<input type="text" class="svelte-1fl1pqq" value="Title"></label>
+		<label><span class="label svelte-1fl1pqq">isMaximized</span>
+			<input type="checkbox"></label></div>
+
+	<div class="details svelte-1fl1pqq"><div class="title svelte-1fl1pqq">Events</div>
+		<div><span class="events-on">on</span>:<span class="events-name svelte-1fl1pqq">clickMinimize</span></div>
+		<div><span class="events-on">on</span>:<span class="events-name svelte-1fl1pqq">clickUnmaximize</span></div>
+		<div><span class="events-on">on</span>:<span class="events-name svelte-1fl1pqq">clickMaximize</span></div>
+		<div><span class="events-on">on</span>:<span class="events-name svelte-1fl1pqq">clickClose</span></div></div>
+
+	<div class="details svelte-1fl1pqq"><div class="title svelte-1fl1pqq">Colors</div>
+		<label><span class="label svelte-1fl1pqq">Themes</span>
+			<select class="themes svelte-1fl1pqq"><option value="theme-light">Light
+					</option><option value="theme-dark">Dark
+					</option><option value="custom">Custom
+					</option></select></label>
+
+		</div></section>
+<section class="details svelte-1fl1pqq"><div class="title svelte-1fl1pqq">Install and use the package</div>
+		<div class="instruction svelte-1fl1pqq"><p class="svelte-1fl1pqq">To use the package in a project:</p>
+			<code>npm i -D @el3um4s/svelte-titlebar</code>
+			<p class="svelte-1fl1pqq">and then in a file:</p>
+			<code style="white-space:pre">import { TitleBar } from &quot; @el3um4s/svelte-titlebar&quot;;
+
+&lt;TitleBar
+	{title}
+	{isMaximized}
+	on:clickMinimize={() =&gt; log(&#39;minimize&#39;)}
+	on:clickUnmaximize={unmaximize}
+	on:clickMaximize={maximize}
+	on:clickClose={() =&gt; log(&#39;close&#39;)}
+	class={theme}
+	--background-color={backgroundColor}
+	--text-color={textColor}
+/&gt;</code></div></section>
+
+<section class="details svelte-1fl1pqq"><div class="title svelte-1fl1pqq">Test e2e</div>
+	<div><a href="/test/titlebars/default">Default</a></div>
+	<div><a href="/test/titlebars/dark">Dark</a></div>
+	<div><a href="/test/titlebars/light">Light</a></div>
+	<div><a href="/test/titlebars/dark-light">Dark and Light</a></div>
+	<div><a href="/test/titlebars/colors">Colors</a></div>
+</section>
+</main>
+
+
+
+			
+		</div>
+	</body>
+</html>
