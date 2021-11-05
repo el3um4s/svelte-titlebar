@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	import { TitleBar } from '$lib/index';
 	import Toggle from 'svelte-toggle';
 
@@ -168,19 +170,19 @@
 <section class="details">
 	<div class="title">Test e2e</div>
 	<div>
-		<a href="/test/titlebars/default">Default</a>
+		<a href="{base}/test/titlebars/default">Default</a>
 	</div>
 	<div>
-		<a href="/test/titlebars/dark">Dark</a>
+		<a href="{base}/test/titlebars/dark">Dark</a>
 	</div>
 	<div>
-		<a href="/test/titlebars/light">Light</a>
+		<a href="{base}/test/titlebars/light">Light</a>
 	</div>
 	<div>
-		<a href="/test/titlebars/dark-light">Dark and Light</a>
+		<a href="{base}/test/titlebars/dark-light">Dark and Light</a>
 	</div>
 	<div>
-		<a href="/test/titlebars/colors">Colors</a>
+		<a href="{base}/test/titlebars/colors">Colors</a>
 	</div>
 </section>
 

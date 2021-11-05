@@ -1,10 +1,12 @@
 <script>
+	import { base } from '$app/paths';
+
 	import '../../../app.css';
 	import './test.css';
 </script>
 
 <div>
-	<a href="/">Back</a>
+	<a href={base}>Back</a>
 
 	<slot />
 </div>
