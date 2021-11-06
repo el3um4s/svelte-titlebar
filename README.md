@@ -3,6 +3,7 @@
 _A Titlebar component for Svelte Projects_
 
 Live demo: [el3um4s.github.io/svelte-titlebar/](https://el3um4s.github.io/svelte-titlebar/)
+NPM: [@el3um4s/svelte-titlebar](https://www.npmjs.com/package/@el3um4s/svelte-titlebar)
 
 ### Install and use the package
 
@@ -14,7 +15,7 @@ and then in a file:
 
 ```svelte
 <script>
-	import { TitleBar } from ' @el3um4s/svelte-titlebar';
+	import { TitleBar } from '@el3um4s/svelte-titlebar';
 </script>
 
 <TitleBar
