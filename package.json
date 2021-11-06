@@ -7,14 +7,11 @@
 		"url": "git+https://github.com/el3um4s/svelte-titlebar.git"
 	},
 	"keywords": [
-		"typescript",
-		"npm",
-		"template",
-		"ts",
 		"svelte",
 		"svelte-kit",
 		"web-component",
-		"svelte-component"
+		"svelte-component",
+		"titlebar"
 	],
 	"author": "Samuele C. De Tomasi",
 	"license": "MIT",

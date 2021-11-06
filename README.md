@@ -1,109 +1,53 @@
-# SVELTE COMPONENT PACKAGE STARTER
+# SVELTE-TITLEBAR
 
-My template for creating Svelte Component Packages
+_A Titlebar component for Svelte Projects_
 
-* [TypeScript](https://www.typescriptlang.org/)
-* [SvelteKit](https://kit.svelte.dev/)
-* TS to JS
-* ESLint
-* [TailwindCSS](https://tailwindcss.com/)
-
-NPM link: [@el3um4s/svelte-component-package-starter](https://www.npmjs.com/package/@el3um4s/svelte-component-package-starter)
-
-### Getting Started
-
-To create a new project based on this template using degit:
-
-```bash
-npx degit el3um4s/svelte-component-package-starter
-```
-
-Then install the dependecies with:
-
-```bash
-npm install
-```
-
-Now update the name field in package.json with your desired package name. Then update the homepage field in package.json. And finally add your code.
-
-### Build the package
-
-Run
-
-```bash
-npm run build
-```
-
-### Test the package
-
-You can test the code with Jest
-
-```bash
-npm test
-```
-
-You can find the test coverage in `coverage/lcov-report/index.html`.
-
-### Check dependencies
-
-You can check and upgrade dependencies to the latest versions, ignoring specified versions. with [npm-check-updates](https://www.npmjs.com/package/npm-check-updates):
-
-```bash
-npm run check-updates
-```
-
-You can also use `npm run check-updates:minor` to update only patch and minor.
-
-Instead `npm run check-updates:patch` only updates patch.
-
-### Publish
-
-First commit the changes to GitHub. Then login to your [NPM](https://www.npmjs.com) account (If you don’t have an account you can do so on [https://www.npmjs.com/signup](https://www.npmjs.com/signup))
-
-```bash
-npm login
-```
-
-Then run publish:
-
-```bash
-npm publish
-```
-
-If you're using a scoped name use:
-
-```bash
-npm publish --access public
-```
-
-### Bumping a new version
-
-To update the package use:
-
-```bash
-npm version patch
-```
-
-and then
-
-```bash
-npm publish
-```
+Live demo: [el3um4s.github.io/svelte-titlebar/](https://el3um4s.github.io/svelte-titlebar/)
 
 ### Install and use the package
 
 To use the package in a project:
 
-```bash
-npm i @el3um4s/svelte-component-package-starter
-```
+`npm i -D @el3um4s/svelte-titlebar`
 
-and then in a svelte file:
+and then in a file:
 
-```html
-<script lang="ts">
-  import { GridColors } from "@el3um4s/svelte-component-package-starter";
+```svelte
+<script>
+	import { TitleBar } from ' @el3um4s/svelte-titlebar';
 </script>
 
-<GridColors  />
+<TitleBar
+	{title}
+	{isMaximized}
+	on:clickMinimize={() => log('minimize')}
+	on:clickUnmaximize={unmaximize}
+	on:clickMaximize={maximize}
+	on:clickClose={() => log('close')}
+	class={theme}
+	--background-color={backgroundColor}
+	--text-color={textColor}
+/>
 ```
+
+### API - Props
+
+| Prop Name   | Type    | Default value |
+| :---------- | :------ | :------------ |
+| title       | string  | Title         |
+| isMaximized | boolean | false         |
+
+### API - Forwarded events
+
+- on:clickMinimize
+- on:clickUnmaximize
+- on:clickMaximize
+- on:clickClose
+
+### Screenshot
+
+![test-default](https://raw.githubusercontent.com/el3um4s/svelte-titlebar/master/src/__tests__/e2e/__image_snapshots__/title-bar-e-2-e-test-ts-test-themes-theme-default-1-snap.png)
+
+![test-light](https://raw.githubusercontent.com/el3um4s/svelte-titlebar/master/src/__tests__/e2e/__image_snapshots__/title-bar-e-2-e-test-ts-test-themes-theme-light-1-snap.png)
+
+![test-themes-colors](https://raw.githubusercontent.com/el3um4s/svelte-titlebar/master/src/__tests__/e2e/__image_snapshots__/title-bar-e-2-e-test-ts-test-themes-colors-1-snap.png)
