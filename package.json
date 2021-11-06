@@ -23,7 +23,7 @@
 		"dev": "svelte-kit dev",
 		"build": "npm run clean && svelte-kit build",
 		"preview": "svelte-kit preview",
-		"deploy": "node ./gh-pages.js",
+		"deploy-doc": "node ./gh-pages.js",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
