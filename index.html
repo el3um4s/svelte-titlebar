@@ -8,21 +8,20 @@
 
 		
 
-		<link rel="modulepreload" href="/svelte-titlebar/_app/start-5b25d97e.js">
-		<link rel="modulepreload" href="/svelte-titlebar/_app/chunks/vendor-d169138f.js">
+		<link rel="modulepreload" href="/svelte-titlebar/_app/start-1177d8a0.js">
+		<link rel="modulepreload" href="/svelte-titlebar/_app/chunks/vendor-8a23bd63.js">
 		<link rel="modulepreload" href="/svelte-titlebar/_app/chunks/paths-28a87002.js">
-		<link rel="modulepreload" href="/svelte-titlebar/_app/pages/__layout.svelte-95d0227c.js">
-		<link rel="modulepreload" href="/svelte-titlebar/_app/pages/index.svelte-2ae78447.js">
-		<link rel="modulepreload" href="/svelte-titlebar/_app/chunks/TitleBar-d7430466.js">
+		<link rel="modulepreload" href="/svelte-titlebar/_app/pages/__layout.svelte-20337a5a.js">
+		<link rel="modulepreload" href="/svelte-titlebar/_app/pages/index.svelte-ccc42342.js">
+		<link rel="modulepreload" href="/svelte-titlebar/_app/chunks/TitleBar-47d8cc54.js">
 		<link rel="stylesheet" href="/svelte-titlebar/_app/assets/start-464e9d0a.css">
-		<link rel="stylesheet" href="/svelte-titlebar/_app/assets/vendor-2f7b4fa7.css">
 		<link rel="stylesheet" href="/svelte-titlebar/_app/assets/pages/__layout.svelte-f2562f53.css">
 		<link rel="stylesheet" href="/svelte-titlebar/_app/assets/app-6de3d55a.css">
-		<link rel="stylesheet" href="/svelte-titlebar/_app/assets/pages/index.svelte-31a95352.css">
+		<link rel="stylesheet" href="/svelte-titlebar/_app/assets/pages/index.svelte-c26d3356.css">
 		<link rel="stylesheet" href="/svelte-titlebar/_app/assets/TitleBar-25190c78.css">
 
 		<script type="module">
-			import { start } from "/svelte-titlebar/_app/start-5b25d97e.js";
+			import { start } from "/svelte-titlebar/_app/start-1177d8a0.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"/svelte-titlebar","assets":""},
@@ -35,8 +34,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/svelte-titlebar/_app/pages/__layout.svelte-95d0227c.js"),
-						import("/svelte-titlebar/_app/pages/index.svelte-2ae78447.js")
+						import("/svelte-titlebar/_app/pages/__layout.svelte-20337a5a.js"),
+						import("/svelte-titlebar/_app/pages/index.svelte-ccc42342.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -52,17 +51,45 @@
 		<div id="svelte">
 
 
-<main class="svelte-1dqh84r"><section class="svelte-1fl1pqq"><h1 class="svelte-1fl1pqq">Svelte-Titlebar</h1>
+<main class="svelte-1dqh84r"><section class="details info svelte-jhr23i"><section class="svelte-3mjcc7"><h1>SvelteTitlebar</h1>
 	<div><i>A Titlebar component for Svelte Projects</i></div>
 
-	<div class="toggle">
-  <label for="toggle0.xcsyk960j3p" class=" svelte-5nxwfo"></label>
-  <div class="svelte-5nxwfo"><button id="toggle0.xcsyk960j3p" aria-checked type="button" role="switch" style="color: #eee; background-color: #10B981; undefined" class=" svelte-5nxwfo"></button>
-    
-      <span class="svelte-5nxwfo">EN</span>
-    </div></div>
+	<section class="details svelte-3mjcc7"><div class="title svelte-3mjcc7">How to use</div>
+		<div>To import the package in a project:</div>
 
-	<div class="titlebar svelte-1fl1pqq"><div style="display: contents; --background-color:#1e609f; --text-color:#DBDBDB;"><header class="theme-light svelte-164k2gg"><div class="drag-region svelte-164k2gg" data-testid="drag-region"><div class="title svelte-164k2gg" data-testid="title"><span class="svelte-164k2gg">Title</span></div>
+			<div class="code details svelte-3mjcc7">npm i -D @el3um4s/svelte-titlebar</div>
+
+		<div>To use in a file:</div>
+		<div class="code details svelte-3mjcc7"><div class="svelte-3mjcc7">&lt;script&gt;
+					<p class="svelte-3mjcc7">import { SvelteTitlebar } from &quot;@el3um4s/svelte-titlebar&quot;</p>
+					&lt;/script&gt;</div>
+			<div class="svelte-3mjcc7">&lt;SvelteTitlebar
+				<ul><li class="svelte-3mjcc7">title</li></ul>
+				<ul><li class="svelte-3mjcc7">isMaximized</li></ul>
+				&gt;
+				&lt;/SvelteTitlebar&gt;</div></div></section>
+
+	<section class="details svelte-3mjcc7"><div class="title svelte-3mjcc7">Props</div>
+			<div class="table svelte-3mjcc7"><span class="table-header svelte-3mjcc7">Name</span>
+				<span class="table-header svelte-3mjcc7">Type</span>
+				<span class="table-header svelte-3mjcc7">Default</span>
+
+				<span class="svelte-3mjcc7">title</span>
+					<span class="undefined svelte-3mjcc7">undefined</span>
+					<span class=" svelte-3mjcc7">Title</span><span class="svelte-3mjcc7">isMaximized</span>
+					<span class="undefined svelte-3mjcc7">undefined</span>
+					<span class=" svelte-3mjcc7">false</span></div></section>
+</section>
+
+	<div class="details svelte-jhr23i"><div class="title svelte-jhr23i">Events</div>
+		<div><span class="events-on">on</span>:<span class="events-name svelte-jhr23i">clickMinimize</span></div>
+		<div><span class="events-on">on</span>:<span class="events-name svelte-jhr23i">clickUnmaximize</span></div>
+		<div><span class="events-on">on</span>:<span class="events-name svelte-jhr23i">clickMaximize</span></div>
+		<div><span class="events-on">on</span>:<span class="events-name svelte-jhr23i">clickClose</span></div></div></section>
+
+<section class="details svelte-jhr23i"><div class="title svelte-jhr23i">Live demo</div>
+
+	<div class="titlebar svelte-jhr23i"><div style="display: contents; --background-color:#1e609f; --text-color:#DBDBDB;"><header class="theme-light svelte-164k2gg"><div class="drag-region svelte-164k2gg" data-testid="drag-region"><div class="title svelte-164k2gg" data-testid="title"><span class="svelte-164k2gg">Title</span></div>
 		<div class="window-controls svelte-164k2gg"><div class="button svelte-164k2gg" data-testid="IconMinimize">
 
 
@@ -76,47 +103,24 @@
 
 <svg xmlns="http://www.w3.org/2000/svg" class="" viewBox="0 0 20 20" fill="currentColor" height="24" width="24" data-testid="SVGIconClose"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></div></div></div>
 </header></div>
-		<div class="log svelte-1fl1pqq">Click: </div></div>
+		<div class="log svelte-jhr23i">Click: </div></div>
 
-	<div class="details svelte-1fl1pqq"><div class="title svelte-1fl1pqq">Props</div>
-		<label><span class="label svelte-1fl1pqq">title</span>
-			<input type="text" class="svelte-1fl1pqq" value="Title"></label>
-		<label><span class="label svelte-1fl1pqq">isMaximized</span>
+	<div class="details svelte-jhr23i"><div class="title svelte-jhr23i">Props</div>
+		<label><span class="label svelte-jhr23i">title</span>
+			<input type="text" class="svelte-jhr23i" value="Title"></label>
+		<label><span class="label svelte-jhr23i">isMaximized</span>
 			<input type="checkbox"></label></div>
 
-	<div class="details svelte-1fl1pqq"><div class="title svelte-1fl1pqq">Events</div>
-		<div><span class="events-on">on</span>:<span class="events-name svelte-1fl1pqq">clickMinimize</span></div>
-		<div><span class="events-on">on</span>:<span class="events-name svelte-1fl1pqq">clickUnmaximize</span></div>
-		<div><span class="events-on">on</span>:<span class="events-name svelte-1fl1pqq">clickMaximize</span></div>
-		<div><span class="events-on">on</span>:<span class="events-name svelte-1fl1pqq">clickClose</span></div></div>
-
-	<div class="details svelte-1fl1pqq"><div class="title svelte-1fl1pqq">Colors</div>
-		<label><span class="label svelte-1fl1pqq">Themes</span>
-			<select class="themes svelte-1fl1pqq"><option value="theme-light">Light
+	<div class="details svelte-jhr23i"><div class="title svelte-jhr23i">Colors</div>
+		<label><span class="label svelte-jhr23i">Themes</span>
+			<select class="themes svelte-jhr23i"><option value="theme-light">Light
 					</option><option value="theme-dark">Dark
 					</option><option value="custom">Custom
 					</option></select></label>
 
 		</div></section>
-<section class="details svelte-1fl1pqq"><div class="title svelte-1fl1pqq">Install and use the package</div>
-		<div class="instruction svelte-1fl1pqq"><p class="svelte-1fl1pqq">To use the package in a project:</p>
-			<code>npm i -D @el3um4s/svelte-titlebar</code>
-			<p class="svelte-1fl1pqq">and then in a file:</p>
-			<code style="white-space:pre">import { TitleBar } from &quot; @el3um4s/svelte-titlebar&quot;;
 
-&lt;TitleBar
-	{title}
-	{isMaximized}
-	on:clickMinimize={() =&gt; log(&#39;minimize&#39;)}
-	on:clickUnmaximize={unmaximize}
-	on:clickMaximize={maximize}
-	on:clickClose={() =&gt; log(&#39;close&#39;)}
-	class={theme}
-	--background-color={backgroundColor}
-	--text-color={textColor}
-/&gt;</code></div></section>
-
-<section class="details svelte-1fl1pqq"><div class="title svelte-1fl1pqq">Test e2e</div>
+<section class="details svelte-jhr23i"><div class="title svelte-jhr23i">Test e2e</div>
 	<div><a href="/svelte-titlebar/test/titlebars/default">Default</a></div>
 	<div><a href="/svelte-titlebar/test/titlebars/dark">Dark</a></div>
 	<div><a href="/svelte-titlebar/test/titlebars/light">Light</a></div>
