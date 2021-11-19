@@ -31,12 +31,6 @@
 		@apply text-2xl;
 	}
 
-	p,
-	ul,
-	ol {
-		@apply mb-8 font-sans;
-	}
-
 	a {
 		text-decoration: underline dotted;
 	}

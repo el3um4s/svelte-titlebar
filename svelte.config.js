@@ -26,7 +26,7 @@ const config = {
 			fallback: null
 		}),
 		paths: {
-			base: '/svelte-titlebar'
+			// base: '/svelte-titlebar'
 		}
 	}
 };
