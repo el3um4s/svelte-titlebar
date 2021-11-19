@@ -3,8 +3,8 @@ const preprocess = require('svelte-preprocess');
 module.exports = {
 	preprocess: preprocess({
 		defaults: {
-			script: "typescript",
+			script: 'typescript'
 		},
-		postcss: true,
-	}),
+		postcss: true
+	})
 };

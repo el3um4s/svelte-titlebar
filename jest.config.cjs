@@ -20,7 +20,5 @@ module.exports = {
 	},
 	setupFilesAfterEnv: ['<rootDir>/jest-setup.ts'],
 	collectCoverageFrom: ['src/**/*.{ts,tsx,svelte,js,jsx}', '!src/routes/**/*'],
-	testPathIgnorePatterns: [
-		"<rootDir>/src/__tests__/__helpers__/",
-	]
+	testPathIgnorePatterns: ['<rootDir>/src/__tests__/__helpers__/']
 };

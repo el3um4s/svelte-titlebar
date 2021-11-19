@@ -8,8 +8,8 @@ const config = {
 	preprocess: [
 		preprocess({
 			style: 'postcss',
-			script: "typescript",
-			postcss: true,
+			script: 'typescript',
+			postcss: true
 		})
 	],
 
@@ -26,7 +26,7 @@ const config = {
 			fallback: null
 		}),
 		paths: {
-			// base: '/svelte-titlebar'
+			base: '/svelte-titlebar'
 		}
 	}
 };

@@ -160,21 +160,9 @@
 	input[type='text'] {
 		@apply h-full border-b border-gray-500 bg-gray-50;
 	}
-	span.events-name {
-		@apply text-indigo-700 font-bold;
-	}
 
 	.themes {
 		@apply w-24 border-b border-gray-500 bg-gray-50;
-	}
-
-	.instruction > p {
-		margin-bottom: 0;
-	}
-
-	.info {
-		--background-color: theme('colors.gray.50');
-		--text-color: theme('colors.gray.800');
 	}
 
 	.svelte-info {
