@@ -35,7 +35,7 @@
 		"test:e2e": "jest --runInBand ./src/__tests__/e2e",
 		"test:e2e-update": "jest --runInBand --updateSnapshot ./src/__tests__/e2e",
 		"test:watch": "npm run test -- --watchAll",
-		"test:coverage": "npm run test -- --coverage",
+		"test:coverage": "npm run test -- --coverage --no-cache",
 		"check-updates": "npx npm-check-updates",
 		"check-updates:minor": "npx npm-check-updates --target minor",
 		"check-updates:patch": "npx npm-check-updates --target patch",
