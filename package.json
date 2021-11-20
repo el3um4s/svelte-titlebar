@@ -24,7 +24,7 @@
 		"dev-watch-info": "npm-run-all --parallel get-info-svelte-components-watcher dev",
 		"build": "npm run get-info-svelte-components && npm run clean && svelte-kit build",
 		"package": "svelte-kit package",
-		"release": "jest --coverage && npm run package && npm publish ./package",
+		"release": "npm run test:coverage && npm run package && npm publish ./package",
 		"preview": "svelte-kit preview",
 		"deploy-doc": "node ./gh-pages.js",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
