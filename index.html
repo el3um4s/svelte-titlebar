@@ -8,21 +8,21 @@
 
 		
 
-		<link rel="modulepreload" href="/svelte-titlebar/_app/start-18938482.js">
-		<link rel="modulepreload" href="/svelte-titlebar/_app/chunks/vendor-5e07801b.js">
+		<link rel="modulepreload" href="/svelte-titlebar/_app/start-5c271226.js">
+		<link rel="modulepreload" href="/svelte-titlebar/_app/chunks/vendor-27531393.js">
 		<link rel="modulepreload" href="/svelte-titlebar/_app/chunks/paths-28a87002.js">
-		<link rel="modulepreload" href="/svelte-titlebar/_app/pages/__layout.svelte-0ae23ac8.js">
-		<link rel="modulepreload" href="/svelte-titlebar/_app/pages/index.svelte-e85af7be.js">
-		<link rel="modulepreload" href="/svelte-titlebar/_app/chunks/TitleBar-d5454a76.js">
+		<link rel="modulepreload" href="/svelte-titlebar/_app/pages/__layout.svelte-95e2a6e4.js">
+		<link rel="modulepreload" href="/svelte-titlebar/_app/pages/index.svelte-49e420be.js">
+		<link rel="modulepreload" href="/svelte-titlebar/_app/chunks/TitleBar-edb3bc12.js">
 		<link rel="stylesheet" href="/svelte-titlebar/_app/assets/start-464e9d0a.css">
 		<link rel="stylesheet" href="/svelte-titlebar/_app/assets/vendor-c0107b56.css">
 		<link rel="stylesheet" href="/svelte-titlebar/_app/assets/pages/__layout.svelte-f2562f53.css">
-		<link rel="stylesheet" href="/svelte-titlebar/_app/assets/app-47146d91.css">
-		<link rel="stylesheet" href="/svelte-titlebar/_app/assets/pages/index.svelte-812e31ca.css">
+		<link rel="stylesheet" href="/svelte-titlebar/_app/assets/app-ded983c1.css">
+		<link rel="stylesheet" href="/svelte-titlebar/_app/assets/pages/index.svelte-ab0d902f.css">
 		<link rel="stylesheet" href="/svelte-titlebar/_app/assets/TitleBar-25190c78.css">
 
 		<script type="module">
-			import { start } from "/svelte-titlebar/_app/start-18938482.js";
+			import { start } from "/svelte-titlebar/_app/start-5c271226.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"/svelte-titlebar","assets":""},
@@ -35,8 +35,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/svelte-titlebar/_app/pages/__layout.svelte-0ae23ac8.js"),
-						import("/svelte-titlebar/_app/pages/index.svelte-e85af7be.js")
+						import("/svelte-titlebar/_app/pages/__layout.svelte-95e2a6e4.js"),
+						import("/svelte-titlebar/_app/pages/index.svelte-49e420be.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -52,13 +52,15 @@
 		<div id="svelte">
 
 
-<main class="svelte-1dqh84r"><section class="svelte-info svelte-1phj7ox"><div style="display: contents; --background-color:#f9fafb; --text-color:#1f2937;"><section class=" svelte-yzliv3"><h1>SvelteTitlebar</h1>
+<main class="svelte-1dqh84r"><section class="svelte-info svelte-eflapj"><div style="display: contents; --background-color:#f9fafb; --text-color:#1f2937;"><section class=" svelte-yzliv3"><h1>SvelteTitlebar</h1>
 	<div><i>A Titlebar component for Svelte Projects</i></div>
+
+	
 
 	<section class="svelte-1ur7nof"><header class="svelte-1ur7nof"><button class="svelte-1cmzbrg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="svelte-1cmzbrg open"><path d="M19 9l-7 7-7-7"></path></svg>
 </button>
-		About</header>
-	<div data-testid="accordion-open" class="svelte-1ur7nof"><span slot="about"><div class="titlebar svelte-1phj7ox"><div style="display: contents; --background-color:#1e609f; --text-color:#DBDBDB;"><header class="theme-light svelte-164k2gg"><div class="drag-region svelte-164k2gg" data-testid="drag-region"><div class="title svelte-164k2gg" data-testid="title"><span class="svelte-164k2gg">Title</span></div>
+		Demo</header>
+	<div data-testid="accordion-open" class="svelte-1ur7nof"><span slot="demo"><div style="display: contents; --background-color:#e5e7eb; --text-color:#1f2937;"><header class="theme-light svelte-164k2gg"><div class="drag-region svelte-164k2gg" data-testid="drag-region"><div class="title svelte-164k2gg" data-testid="title"><span class="svelte-164k2gg">Title</span></div>
 		<div class="window-controls svelte-164k2gg"><div class="button svelte-164k2gg" data-testid="IconMinimize">
 
 
@@ -72,17 +74,14 @@
 
 <svg xmlns="http://www.w3.org/2000/svg" class="" viewBox="0 0 20 20" fill="currentColor" height="24" width="24" data-testid="SVGIconClose"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></div></div></div>
 </header></div>
-				<div class="log svelte-1phj7ox">Click: </div></div>
+			<div class="log svelte-eflapj" style="background-color:#e5e7eb; color:#1f2937;">Click: </div>
+			<div class="details svelte-eflapj"><label><span class="label svelte-eflapj">title</span>
+					<input type="text" class="svelte-eflapj" value="Title"></label>
+				<label><span class="label svelte-eflapj">isMaximized</span>
+					<input type="checkbox"></label>
 
-			<div class="details svelte-1phj7ox"><div class="title svelte-1phj7ox">Props</div>
-				<label><span class="label svelte-1phj7ox">title</span>
-					<input type="text" class="svelte-1phj7ox" value="Title"></label>
-				<label><span class="label svelte-1phj7ox">isMaximized</span>
-					<input type="checkbox"></label></div>
-
-			<div class="details svelte-1phj7ox"><div class="title svelte-1phj7ox">Colors</div>
-				<label><span class="label svelte-1phj7ox">Themes</span>
-					<select class="themes svelte-1phj7ox"><option value="theme-light">Light
+				<label><span class="label svelte-eflapj">Themes</span>
+					<select class="themes svelte-eflapj"><option value="theme-light">Light
 							</option><option value="theme-dark">Dark
 							</option><option value="custom">Custom
 							</option></select></label>
