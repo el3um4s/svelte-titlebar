@@ -46,82 +46,78 @@
 		description="A Titlebar component for Svelte Projects"
 		--background-color="#f9fafb"
 		--text-color="#1f2937"
-	/>
-</section>
+	>
+		<span slot="about">
+			<div class="titlebar">
+				<TitleBar
+					{title}
+					{isMaximized}
+					on:clickMinimize={() => log('minimize')}
+					on:clickUnmaximize={unmaximize}
+					on:clickMaximize={maximize}
+					on:clickClose={() => log('close')}
+					class={theme}
+					--background-color={backgroundColor}
+					--text-color={textColor}
+				/>
+				<div class="log">Click: {logs}</div>
+			</div>
 
-<section class="details">
-	<div class="title">Live demo</div>
+			<div class="details">
+				<div class="title">Props</div>
+				<label>
+					<span class="label">title</span>
+					<input type="text" bind:value={title} />
+				</label>
+				<label>
+					<span class="label">isMaximized</span>
+					<input type="checkbox" bind:checked={isMaximized} />
+				</label>
+			</div>
 
-	<div class="titlebar">
-		<TitleBar
-			{title}
-			{isMaximized}
-			on:clickMinimize={() => log('minimize')}
-			on:clickUnmaximize={unmaximize}
-			on:clickMaximize={maximize}
-			on:clickClose={() => log('close')}
-			class={theme}
-			--background-color={backgroundColor}
-			--text-color={textColor}
-		/>
-		<div class="log">Click: {logs}</div>
-	</div>
+			<div class="details">
+				<div class="title">Colors</div>
+				<label>
+					<span class="label">Themes</span>
+					<select bind:value={theme} class="themes">
+						{#each themes as t}
+							<option value={t.id}>
+								{t.text}
+							</option>
+						{/each}
+					</select>
+				</label>
 
-	<div class="details">
-		<div class="title">Props</div>
-		<label>
-			<span class="label">title</span>
-			<input type="text" bind:value={title} />
-		</label>
-		<label>
-			<span class="label">isMaximized</span>
-			<input type="checkbox" bind:checked={isMaximized} />
-		</label>
-	</div>
-
-	<div class="details">
-		<div class="title">Colors</div>
-		<label>
-			<span class="label">Themes</span>
-			<select bind:value={theme} class="themes">
-				{#each themes as t}
-					<option value={t.id}>
-						{t.text}
-					</option>
-				{/each}
-			</select>
-		</label>
-
-		{#if theme === 'custom'}
-			<label>
-				<span class="label">--background-color</span>
-				<input type="color" bind:value={backgroundColor} />
-			</label>
-			<label>
-				<span class="label">--text-color</span>
-				<input type="color" bind:value={textColor} />
-			</label>
-		{/if}
-	</div>
-</section>
-
-<section class="details">
-	<div class="title">Test e2e</div>
-	<div>
-		<a href="{base}/test/titlebars/default">Default</a>
-	</div>
-	<div>
-		<a href="{base}/test/titlebars/dark">Dark</a>
-	</div>
-	<div>
-		<a href="{base}/test/titlebars/light">Light</a>
-	</div>
-	<div>
-		<a href="{base}/test/titlebars/dark-light">Dark and Light</a>
-	</div>
-	<div>
-		<a href="{base}/test/titlebars/colors">Colors</a>
-	</div>
+				{#if theme === 'custom'}
+					<label>
+						<span class="label">--background-color</span>
+						<input type="color" bind:value={backgroundColor} />
+					</label>
+					<label>
+						<span class="label">--text-color</span>
+						<input type="color" bind:value={textColor} />
+					</label>
+				{/if}
+			</div>
+		</span>
+		<span slot="test">
+			<div>
+				<a href="{base}/test/titlebars/default">Default</a>
+			</div>
+			<div>
+				<a href="{base}/test/titlebars/dark">Dark</a>
+			</div>
+			<div>
+				<a href="{base}/test/titlebars/light">Light</a>
+			</div>
+			<div>
+				<a href="{base}/test/titlebars/dark-light">Dark and Light</a>
+			</div>
+			<div>
+				<a href="{base}/test/titlebars/colors">Colors</a>
+			</div>
+		</span>
+	</SvelteInfo>
 </section>
 
 <style lang="postcss">
