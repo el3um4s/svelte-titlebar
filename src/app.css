@@ -4,13 +4,25 @@
 @tailwind utilities;
 
 :root {
-	--background-color: theme('colors.gray.800');
-	--text-color: theme('colors.gray.200');
+	--text-color: theme('colors.gray.800');
+	--background-color: theme('colors.gray.50');
 }
 
 @layer base {
+	* {
+		@apply m-0 p-0 border-0 align-baseline;
+		color: var(--text-color, theme('colors.gray.800'));
+		background-color: var(--background-color, theme('colors.gray.50'));
+	}
+
+	html,
 	body {
-		@apply bg-gray-50 text-gray-800;
+		@apply flex relative m-0 box-border flex-col items-stretch;
+		@apply overflow-y-hidden;
+		color: var(--text-color, theme('colors.gray.800'));
+		background-color: var(--background-color, theme('colors.gray.50'));
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu,
+			Cantarell, 'Helvetica Neue', sans-serif;
 	}
 
 	h1,
@@ -23,7 +35,8 @@
 	}
 
 	h1 {
-		@apply text-3xl;
+		@apply text-4xl font-bold mb-2;
+		color: var(--text-color, theme('colors.gray.800'));
 	}
 
 	h2,
@@ -32,11 +45,28 @@
 	}
 
 	a {
-		text-decoration: underline dotted;
+		@apply border border-dotted box-border;
+		border-bottom-color: var(--text-color, theme('colors.gray.800'));
 	}
 
 	a:hover {
-		@apply underline;
+		border-color: var(--text-color, theme('colors.gray.800'));
+	}
+
+	main {
+		@apply mt-16 overflow-y-auto;
+		height: calc(100vh - theme('spacing.16'));
+	}
+	main::-webkit-scrollbar {
+		@apply w-4;
+	}
+	main::-webkit-scrollbar-track {
+		background-color: var(--text-color, theme('colors.gray.800'));
+	}
+	main::-webkit-scrollbar-thumb {
+		@apply border-2 border-solid;
+		background-color: var(--background-color, theme('colors.gray.50'));
+		border-color: var(--text-color, theme('colors.gray.800'));
 	}
 }
 
@@ -48,5 +78,8 @@
 	.theme-dark {
 		--background-color: theme('colors.gray.800');
 		--text-color: theme('colors.gray.200');
+	}
+	.main-center {
+		@apply p-1 w-full flex flex-col m-auto max-w-prose;
 	}
 }

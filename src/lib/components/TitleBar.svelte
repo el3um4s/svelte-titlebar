@@ -6,8 +6,8 @@
 	import IconMaximize from './icons/_IconMaximize.svelte';
 	import IconUnmaximize from './icons/_IconUnmaximize.svelte';
 
-	export let title = 'Title';
-	export let isMaximized = false;
+	export let title: string = 'Title';
+	export let isMaximized: boolean = false;
 
 	let className = '';
 	export { className as class };
@@ -78,8 +78,8 @@
 	.button {
 		@apply row-span-1 flex justify-center items-center w-9 h-full;
 	}
-	.button:hover {
+	/* .button:hover {
 		background-color: var(--text-color);
 		color: var(--background-color);
-	}
+	} */
 </style>
