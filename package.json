@@ -1,6 +1,6 @@
 {
 	"name": "@el3um4s/svelte-titlebar",
-	"version": "0.0.12",
+	"version": "0.0.13",
 	"description": "A Titlebar component for Svelte Projects",
 	"repository": {
 		"type": "git",
