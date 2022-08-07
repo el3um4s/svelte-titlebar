@@ -1,4 +1,3 @@
-<!-- https://heroicons.com/ -->
 <script lang="ts">
 	let customClass: string = '';
 	export { customClass as class };
@@ -7,16 +6,10 @@
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	class={customClass}
-	viewBox="0 0 20 20"
-	fill="none"
 	data-testid="SVGIconMinimize"
+	viewBox="0 0 10.2 1"
 >
-	<path
-		stroke-linecap="round"
-		stroke-linejoin="round"
-		stroke-width="3"
-		d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-	/>
+	<rect x="0" y="50%" width="10.2" height="1" />
 </svg>
 
 <style lang="postcss">

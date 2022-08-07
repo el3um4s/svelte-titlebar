@@ -1,24 +1,16 @@
-<!-- https://heroicons.com/ -->
 <script lang="ts">
 	let customClass: string = '';
 	export { customClass as class };
 </script>
 
 <svg
+	viewBox="0 0 10 10"
 	xmlns="http://www.w3.org/2000/svg"
 	class={customClass}
-	fill="none"
-	viewBox="0 0 24 24"
-	stroke="none"
 	data-testid="SVGIconMaximize"
 >
-	<path
-		stroke-linecap="round"
-		stroke-linejoin="round"
-		stroke-width="3"
-		d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"
-	/>
-</svg>
+	<path d="M0,0v10h10V0H0z M9,9H1V1h8V9z" /></svg
+>
 
 <style lang="postcss">
 	svg {

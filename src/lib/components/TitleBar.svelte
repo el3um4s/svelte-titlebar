@@ -78,8 +78,4 @@
 	.button {
 		@apply row-span-1 flex justify-center items-center w-9 h-full;
 	}
-	/* .button:hover {
-		background-color: var(--text-color);
-		color: var(--background-color);
-	} */
 </style>
