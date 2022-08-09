@@ -4,76 +4,39 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
-
-		
-
-		<link rel="modulepreload" href="/svelte-titlebar/_app/start-150edd24.js">
-		<link rel="modulepreload" href="/svelte-titlebar/_app/chunks/vendor-c7c030d9.js">
-		<link rel="modulepreload" href="/svelte-titlebar/_app/chunks/paths-28a87002.js">
-		<link rel="modulepreload" href="/svelte-titlebar/_app/pages/__layout.svelte-45599add.js">
-		<link rel="modulepreload" href="/svelte-titlebar/_app/pages/index.md-2b2a9f94.js">
-		<link rel="modulepreload" href="/svelte-titlebar/_app/chunks/TitleBar-82695a88.js">
-		<link rel="stylesheet" href="/svelte-titlebar/_app/assets/start-464e9d0a.css">
-		<link rel="stylesheet" href="/svelte-titlebar/_app/assets/vendor-c0107b56.css">
-		<link rel="stylesheet" href="/svelte-titlebar/_app/assets/pages/__layout.svelte-4ca548c2.css">
-		<link rel="stylesheet" href="/svelte-titlebar/_app/assets/pages/index.md-943ab8b8.css">
-		<link rel="stylesheet" href="/svelte-titlebar/_app/assets/TitleBar-eb302b47.css">
-
-		<script type="module">
-			import { start } from "/svelte-titlebar/_app/start-150edd24.js";
-			start({
-				target: document.querySelector("#svelte"),
-				paths: {"base":"/svelte-titlebar","assets":""},
-				session: {},
-				host: location.host,
-				route: true,
-				spa: false,
-				trailing_slash: "never",
-				hydrate: {
-					status: 200,
-					error: null,
-					nodes: [
-						import("/svelte-titlebar/_app/pages/__layout.svelte-45599add.js"),
-						import("/svelte-titlebar/_app/pages/index.md-2b2a9f94.js")
-					],
-					page: {
-						host: location.host, // TODO this is redundant
-						path: "/",
-						query: new URLSearchParams(""),
-						params: {}
-					}
-				}
-			});
-		</script>
+		<meta http-equiv="content-security-policy" content="">
+	<link href="/svelte-titlebar/_app/immutable/assets/__layout-8b88d51c.css" rel="stylesheet">
+	<link href="/svelte-titlebar/_app/immutable/assets/index-cca3159c.css" rel="stylesheet">
+	<link href="/svelte-titlebar/_app/immutable/assets/TitleBar-4adf7b7b.css" rel="stylesheet">
+	<link rel="modulepreload" href="/svelte-titlebar/_app/immutable/start-642b794b.js">
+	<link rel="modulepreload" href="/svelte-titlebar/_app/immutable/chunks/index-b17d7524.js">
+	<link rel="modulepreload" href="/svelte-titlebar/_app/immutable/chunks/paths-b9644fda.js">
+	<link rel="modulepreload" href="/svelte-titlebar/_app/immutable/pages/__layout.svelte-0437368d.js">
+	<link rel="modulepreload" href="/svelte-titlebar/_app/immutable/chunks/index-ea3ec6d8.js">
+	<link rel="modulepreload" href="/svelte-titlebar/_app/immutable/pages/index.md-8c46091e.js">
+	<link rel="modulepreload" href="/svelte-titlebar/_app/immutable/chunks/TitleBar-d46cc3d6.js">
 	</head>
 	<body>
-		<div id="svelte">
+		 <div>
 
 
-<header class="svelte-dkcntm"><div class="svelte-dkcntm"><a href="//undefined/svelte-titlebar" class="svelte-dkcntm invisible">Home</a><a href="https://github.com/el3um4s/svelte-titlebar" class="svelte-dkcntm">GitHub</a><a href="https://www.npmjs.com/package/@el3um4s/svelte-titlebar" class="svelte-dkcntm">NPM</a></div>
+<header class="svelte-dkcntm"><div class="svelte-dkcntm"><a href="//sveltekit-prerender/svelte-titlebar" class="svelte-dkcntm">Home</a><a href="https://github.com/el3um4s/svelte-titlebar" class="svelte-dkcntm">GitHub</a><a href="https://www.npmjs.com/package/@el3um4s/svelte-titlebar" class="svelte-dkcntm">NPM</a></div>
 </header>
 <main><div class="main-center"><section class="svelte-1j0pf1y"><div style="display: contents; --background-color:#f9fafb; --text-color:#1f2937;"><section class=" svelte-yzliv3"><h1>SvelteTitlebar</h1>
 	<div><i>A Titlebar component for Svelte Projects</i></div>
 
 	
 
-	<section class="svelte-1ur7nof"><header class="svelte-1ur7nof"><button class="svelte-1cmzbrg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="svelte-1cmzbrg open"><path d="M19 9l-7 7-7-7"></path></svg>
+	<section class="svelte-6xg35u"><header class="svelte-6xg35u"><button class="svelte-1cmzbrg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="svelte-1cmzbrg open"><path d="M19 9l-7 7-7-7"></path></svg>
 </button>
 		Demo</header>
-	<div data-testid="accordion-open" class="svelte-1ur7nof"><div><section class="svelte-1tbytdc"><div style="display: contents; --background-color:#e5e7eb; --text-color:#1f2937;"><header class="theme-light svelte-13q9slt"><div class="drag-region svelte-13q9slt" data-testid="drag-region"><div class="title svelte-13q9slt" data-testid="title"><span class="svelte-13q9slt">Title</span></div>
-		<div class="window-controls svelte-13q9slt"><div class="button svelte-13q9slt" data-testid="IconMinimize">
-
-
-<svg xmlns="http://www.w3.org/2000/svg" class=" svelte-jztvv0" viewBox="0 0 20 20" fill="none" data-testid="SVGIconMinimize"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"></path></svg></div>
-			<div class="button svelte-13q9slt" data-testid="IconMaximize">
-
-
-<svg xmlns="http://www.w3.org/2000/svg" class=" svelte-jztvv0" fill="none" viewBox="0 0 24 24" stroke="none" data-testid="SVGIconMaximize"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg></div>
-			<div class="button svelte-13q9slt" data-testid="IconClose">
-
-
-<svg xmlns="http://www.w3.org/2000/svg" class=" svelte-jztvv0" viewBox="0 0 20 20" fill="none" data-testid="SVGIconClose"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"></path></svg></div></div></div>
+	<div data-testid="accordion-open" class="svelte-6xg35u"><div><section class="svelte-1tbytdc"><div style="display: contents; --background-color:#e5e7eb; --text-color:#1f2937;"><header class="theme-light svelte-rqichs"><div class="drag-region svelte-rqichs" data-testid="drag-region"><div class="title svelte-rqichs" data-testid="title"><span class="svelte-rqichs">Title</span></div>
+		<div class="window-controls svelte-rqichs"><div class="button svelte-1m5vjtq" data-testid="IconMinimize"><svg xmlns="http://www.w3.org/2000/svg" class=" svelte-1m5vjtq" data-testid="SVGIconMinimize" viewBox="0 0 10.2 1"><rect x="0" y="50%" width="10.2" height="1"></rect></svg>
+</div>
+			<div class="button svelte-1m5vjtq" data-testid="IconMaximize"><svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" class=" svelte-1m5vjtq" data-testid="SVGIconMaximize"><path d="M0,0v10h10V0H0z M9,9H1V1h8V9z"></path></svg>
+</div>
+			<div class="button svelte-1m5vjtq" data-testid="IconClose"><svg viewBox="0 0 10 10" class=" svelte-1m5vjtq" data-testid="SVGIconClose"><polygon points="10.2,0.7 9.5,0 5.1,4.4 0.7,0 0,0.7 4.4,5.1 0,9.5 0.7,10.2 5.1,5.8 9.5,10.2 10.2,9.5 5.8,5.1"></polygon></svg>
+</div></div></div>
 </header></div>
 
 		<div class="log" style="background-color:#e5e7eb; color:#1f2937;">Click: </div></section>
@@ -91,20 +54,20 @@
 </div></div>
 </section>
 
-	<section class="svelte-1ur7nof"><header class="svelte-1ur7nof"><button class="svelte-1cmzbrg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="svelte-1cmzbrg open"><path d="M19 9l-7 7-7-7"></path></svg>
+	<section class="svelte-6xg35u"><header class="svelte-6xg35u"><button class="svelte-1cmzbrg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="svelte-1cmzbrg open"><path d="M19 9l-7 7-7-7"></path></svg>
 </button>
 		How to use</header>
-	<div data-testid="accordion-open" class="svelte-1ur7nof"><div data-testid="how-to-use"><div>To import the package in a project:</div>
+	<div data-testid="accordion-open" class="svelte-6xg35u"><div data-testid="how-to-use"><div>To import the package in a project:</div>
 		<div class="svelte-1ki1g3x">npm i -D @el3um4s/svelte-titlebar</div>
 
 	<div>To use in a file:</div>
 
-	<div class="svelte-1d7i6f2"><div class="svelte-vcz78"><span class="tag svelte-vcz78">&lt;script&gt;</span>
+	<div class="svelte-1d7i6f2"><div class="svelte-vcz78"><span class="tag svelte-vcz78">&lt;script></span>
 	<p class="svelte-vcz78">import { <span class="import svelte-vcz78">SvelteTitlebar</span>
 		} from
 		<span class="import svelte-vcz78">&quot;@el3um4s/svelte-titlebar&quot;</span>;
 	</p>
-	<span class="tag svelte-vcz78">&lt;/script&gt;</span>
+	<span class="tag svelte-vcz78">&lt;/script></span>
 </div>
 		<br>
 	<div class="svelte-r4lhra"><span class="tag svelte-r4lhra">&lt;<span class="name svelte-r4lhra">SvelteTitlebar</span></span>
@@ -112,30 +75,30 @@
 		<ul data-testid="props-actions"><li class="svelte-r4lhra">{ <span class="prop svelte-r4lhra">title</span> }</li><li class="svelte-r4lhra">{ <span class="prop svelte-r4lhra">isMaximized</span> }</li>
 			<li class="svelte-r4lhra">on:<span class="action svelte-r4lhra">clickMinimize</span></li><li class="svelte-r4lhra">on:<span class="action svelte-r4lhra">clickUnmaximize</span></li><li class="svelte-r4lhra">on:<span class="action svelte-r4lhra">clickMaximize</span></li><li class="svelte-r4lhra">on:<span class="action svelte-r4lhra">clickClose</span></li></ul>
 
-		<span class="tag svelte-r4lhra">/&gt;</span>
+		<span class="tag svelte-r4lhra">/></span>
 </div>
 </div></div></div>
 </section>
 
-	<section class="svelte-1ur7nof"><header class="svelte-1ur7nof"><button class="svelte-1cmzbrg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="svelte-1cmzbrg"><path d="M19 9l-7 7-7-7"></path></svg>
+	<section class="svelte-6xg35u"><header class="svelte-6xg35u"><button class="svelte-1cmzbrg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="svelte-1cmzbrg"><path d="M19 9l-7 7-7-7"></path></svg>
 </button>
 		Props</header>
 	
 </section>
 
-	<section class="svelte-1ur7nof"><header class="svelte-1ur7nof"><button class="svelte-1cmzbrg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="svelte-1cmzbrg"><path d="M19 9l-7 7-7-7"></path></svg>
+	<section class="svelte-6xg35u"><header class="svelte-6xg35u"><button class="svelte-1cmzbrg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="svelte-1cmzbrg"><path d="M19 9l-7 7-7-7"></path></svg>
 </button>
 		Actions</header>
 	
 </section>
 
-	<section class="svelte-1ur7nof"><header class="svelte-1ur7nof"><button class="svelte-1cmzbrg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="svelte-1cmzbrg"><path d="M19 9l-7 7-7-7"></path></svg>
+	<section class="svelte-6xg35u"><header class="svelte-6xg35u"><button class="svelte-1cmzbrg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="svelte-1cmzbrg"><path d="M19 9l-7 7-7-7"></path></svg>
 </button>
 		CSS Variables</header>
 	
 </section>
 
-	<section class="svelte-1ur7nof"><header class="svelte-1ur7nof"><button class="svelte-1cmzbrg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="svelte-1cmzbrg"><path d="M19 9l-7 7-7-7"></path></svg>
+	<section class="svelte-6xg35u"><header class="svelte-6xg35u"><button class="svelte-1cmzbrg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="svelte-1cmzbrg"><path d="M19 9l-7 7-7-7"></path></svg>
 </button>
 		Tests</header>
 	
@@ -143,8 +106,26 @@
 </section></div></section></div></main>
 
 
+		<script type="module" data-sveltekit-hydrate="1ljzfx6">
+		import { set_public_env, start } from "/svelte-titlebar/_app/immutable/start-642b794b.js";
 
-			
-		</div>
+		set_public_env({});
+
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="1ljzfx6"]').parentNode,
+			paths: {"base":"/svelte-titlebar","assets":"/svelte-titlebar"},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [0, 3],
+				params: {},
+				routeId: ""
+			}
+		});
+	</script></div>
 	</body>
 </html>
