@@ -1,4 +1,4 @@
-import { Browser, chromium } from 'playwright';
+import { chromium, type Browser } from 'playwright';
 
 const base = 'https://el3um4s.github.io/svelte-titlebar';
 

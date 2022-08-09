@@ -24,29 +24,13 @@
 			<span>{title}</span>
 		</div>
 		<div class="window-controls">
-			<div class="button" data-testid="IconMinimize" on:click={(e) => dispatch('clickMinimize', e)}>
-				<IconMinimize />
-			</div>
+			<IconMinimize on:clickMinimize={(e) => dispatch('clickMinimize', e)} />
 			{#if isMaximized}
-				<div
-					class="button"
-					data-testid="IconUnmaximize"
-					on:click={(e) => dispatch('clickUnmaximize', e)}
-				>
-					<IconUnmaximize />
-				</div>
+				<IconUnmaximize on:clickUnmaximize={(e) => dispatch('clickUnmaximize', e)} />
 			{:else}
-				<div
-					class="button"
-					data-testid="IconMaximize"
-					on:click={(e) => dispatch('clickMaximize', e)}
-				>
-					<IconMaximize />
-				</div>
+				<IconMaximize on:clickMaximize={(e) => dispatch('clickMaximize', e)} />
 			{/if}
-			<div class="button" data-testid="IconClose" on:click={(e) => dispatch('clickClose', e)}>
-				<IconClose />
-			</div>
+			<IconClose on:clickClose={(e) => dispatch('clickClose', e)} />
 		</div>
 	</div>
 </header>
@@ -77,5 +61,9 @@
 	}
 	.button {
 		@apply row-span-1 flex justify-center items-center w-9 h-full;
+	}
+
+	.button:hover {
+		background-color: var(--text-color, theme('colors.gray.800'));
 	}
 </style>

@@ -1,6 +1,6 @@
-import { Browser, chromium } from 'playwright';
+import { chromium, type Browser } from 'playwright';
 
-const base = 'http://localhost:3000/svelte-titlebar';
+const base = 'http://localhost:5173/svelte-titlebar';
 
 describe('test themes', () => {
 	let browser: Browser;
